@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../script.js"></script>
+    <title>inserimento dei dati</title>
+</head>
+<body>
+    <header><h1>Inserisci un Libro</h1></header>
+    <form action="./inserimento.php" method="post" id="formLibro" onsubmit="return validazioneForm()">
+        <!-- autore -->
+        <label for="autore_nome">Nome dell'autore</label>
+        <input type="text" id="autore_nome" name="autore_nome"><br>
+        <label for="autore_cognome">Cognome dell'autore</label>
+        <input type="text" id="autore_cognome" name="autore_cognome"><br>
+        <label for="">Data di Nascita(opzionale)</label>
+        <input type="date" id="autore_data" name="autore_data" optional="opzionale"><br>
+
+        <!-- casa editrice -->
+        <label for="editore">Nome casa editrice</label>
+        <input type="text" id="editore" name="editore"><br>
+        <label for="editore_sede">Sede(opzionali)</label>
+        <input type="text" id="editore_sede" name="editore_sede" optional='opzionale'><br>
+
+        <!-- genere -->
+        <label for="genere">Genere</label>
+        <input type="text" id="genere" name="genere"><br>
+
+        <!-- libro -->
+        <label for="">Titolo del libro</label>
+        <input type="text" id="libro" name="libro"><br>
+        <label for="libro_prezzo">Prezzo</label>
+        <input type="number" name="libro_prezzo" id="libro_prezzo"><br>
+        <label for="libro_giacenza">Giacenza</label>
+        <input type="number" name="libro_giacenza" id="libro_giacenza"><br>
+        <input type="submit" value="inserisci libro">
+    </form>
+    <footer><p class="footer_text">creato da simone Fernandez IV</p></footer>
+    
+</body>
+</html>

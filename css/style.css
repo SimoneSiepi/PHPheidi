@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.footer_text {
+  text-align: center;
+}
+
+header {
+  text-align: center;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td, th{
+  border: 2px solid black;
+}
+
+
+.error{
+  border: 2px solid red;
+}
